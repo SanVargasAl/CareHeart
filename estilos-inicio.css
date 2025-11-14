@@ -1,0 +1,86 @@
+body {
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+.cont-prod-imagen {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.contenedor-general img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+/*Ajuste de imagen sacado de: https://stackoverflow.com/a/14696457*/
+
+.segunda-mitad {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*Posicionamiento en la derecha sacado de: https://stackoverflow.com/a/7282252*/
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 52%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: rgb(77, 77, 99);
+}
+
+.text-logo-color {
+  color: rgb(23, 161, 156);
+}
+
+.campo-central {
+  margin-bottom: 0.938rem;
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  left: 40%;
+  display: block;
+  align-items: center;
+}
+
+.boton {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border: 0.063rem solid black;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: #00908e;
+  max-width: 31.25rem;
+}
+
+.boton:hover {
+  background-color: #00c4be;
+}
+
+.campo-central ul {
+  list-style: none;
+  color: white;
+}
+
+.campo-central label {
+  max-width: 60rem;
+  font-weight: 3.75rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem solid #ccc;
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+}
