@@ -62,7 +62,9 @@
 .botones-login {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.625rem;
+  width: 30%;
 }
 
 .btn-ingresar,
@@ -72,6 +74,8 @@
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
+  margin: 0;
+  width: auto;
 }
 
 /* Ingresar */
