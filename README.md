@@ -9,3 +9,4 @@ Integrantes:
 - Jhoyner Arnold Calampa Bardales (u202117290)
 - Anthony Lara Saavedra (u20231F262)
 - Sudario Mladonado Joaquin Antonio (u202411958)
+- Ayala Gonzales Detler Andres (U202415888)
