@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="public/assets/styles/styles.css" />
+    <link rel="stylesheet" href="public/assets/styles/pie.css" />
+  </head>
+  <body>
+    <nav class="Top-hearder">
+      <a href="" class="logo">
+        <img height="75" width="75" src="public/assets/images/logo careheart.png" alt="" />
+      </a>
+      <ul class="Menu-horizontal">
+        <li>
+          <a href="">Características</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Monitoreo en tiempo real</a></li>
+            <li><a href="">Alertas y geolocalización</a></li>
+            <li><a href="">Recordatorios de medicación</a></li>
+            <li><a href="">Informes de salud</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Como funciona</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Regístrate</a></li>
+            <li><a href="">Vincula tu pulsera</a></li>
+            <li><a href="">Recibe alertas</a></li>
+            <li><a href="">Comparte con tu familia</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Planes</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Plan Básico</a></li>
+            <li><a href="">Plan Familiar</a></li>
+            <li><a href="">Plan Premiun</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Recursos</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Tutoriales</a></li>
+            <li><a href="">Privacidad y datos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="botones-login">
+        <a href="inicio-de-sesion.html" class="btn-ingresar">Ingresar</a>
+        <a href="registrarse.html" class="btn-registrarse">Registrarse</a>
+      </div>
+    </nav>
+    <!--Primera seccion-->
+    <section class="seccion-Inicio">
+      <div class="cont-gral-inicio">
+        <div class="cont-ini-texto">
+          <h1>Tranquilidad para ti, cuidado constante para ellos.</h1>
+          <p>
+            Nuestra aplicación de asistencia remota monitorea los signos vitales
+            de tus seres queridos, enviando alertas y recordatorios para que
+            siempre estén protegidos.
+          </p>
+          <div class="botones-inicio">
+            <a href="" class="btn-comofunciona">Descubre cómo funciona</a>
+            <a href="" class="btn-planes">Ver Planes de Suscripción</a>
+          </div>
+        </div>
+        <div class="cont-ini-imagen">
+          <img src="public/assets/images/circulo mujeres.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--Segunda seccion-->
+    <section class="seccion-comofunciona">
+      <div class="cont-gral-cfunciona">
+        <div class="cont-cf-texto">
+          <h1>Descubre como funciona</h1>
+          <p>
+            CareHeart conecta una pulsera inteligente IoT con una aplicación
+            móvil y web que monitorea tus signos vitales en tiempo real
+            (frecuencia cardíaca, presión arterial y oxígeno en sangre). Si el
+            sistema detecta una anomalía o una caída, envía alertas inmediatas a
+            tus familiares o cuidadores con tu ubicación exacta. Además, la app
+            incluye recordatorios automáticos de medicación y notificaciones de
+            citas médicas, para ayudarte a mantener tu tratamiento y bienestar
+            al día. Todo el proceso es seguro, fácil de usar y diseñado para
+            adultos mayores, garantizando tranquilidad y acompañamiento las 24
+            horas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Tercera seccion-->
+    <section class="seccion-planes">
+      <div class="cont-gral-planes">
+        <div class="planes-texto">
+          <h2>Nuestros Planes</h2>
+          <p>
+            Elige el plan que mejor se adapte a tus necesidades y cuida la salud
+            de quienes más quieres. Todos nuestros planes incluyen monitoreo en
+            tiempo real, alertas inteligentes y soporte técnico 24/7.
+          </p>
+        </div>
+
+        <div class="planes">
+          <!-- Plan Básico -->
+          <article class="carta-plan">
+            <h3>Plan Básico</h3>
+            <p>
+              Ideal para adultos mayores que viven solos. Incluye monitoreo
+              cardíaco básico, alertas ante caídas y recordatorios automáticos
+              de medicación.
+            </p>
+            <a href="" class="btn-verde">Compra ya</a>
+          </article>
+
+          <!-- Plan Familiar -->
+          <article class="carta-plan">
+            <h3>Plan Familiar</h3>
+            <p>
+              Pensado para familias que cuidan de un ser querido. Permite
+              vincular hasta 3 contactos, compartir reportes de salud y recibir
+              notificaciones en tiempo real.
+            </p>
+            <a href="" class="btn-verde">Compra ya</a>
+          </article>
+
+          <!-- Plan Premium -->
+          <article class="carta-plan">
+            <h3>Plan Premium</h3>
+            <p>
+              Diseñado para atención integral. Monitoreo avanzado 24/7, informes
+              personalizados, conexión con centros médicos y soporte
+              prioritario.
+            </p>
+            <a href="" class="btn-verde">Compra ya</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--Formulario-->
+    <section class="seccion-contacto" id="contacto">
+      <div class="cont-gral-contacto">
+        <h2>Contactanos</h2>
+        <p>Envíanos un mensaje y te responderemos a la brevedad</p>
+
+        <form class="form-contacto">
+          <div class="campo">
+            <input type="text" name="nombre" placeholder="Nombre" />
+          </div>
+          <div class="campo">
+            <input
+              type="email"
+              name="correo"
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <div class="campo">
+            <input type="text" name="mensaje" placeholder="Mensaje" />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <!-- Enlaces legales -->
+ <section class="seccion-pie">
+ <footer class="footer-container">
+  <a href="" class="logo">
+    <img height="120" width="120" src="public/assets/images/logo careheart.png" alt="" />
+  </a>
+ <div class="footer-links">
+  <h4>Legal</h4>
+  <a href=""
+    >Política de Privacidad</a
+  >
+  <!-- Dentro de href llama a un documento pdf con la poltica-->
+  <a href="Documentos/obtenerDocumento.pdf"target="_blank">Términos y Condiciones</a>
+  <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+  <a href="Documentos/obtenerDocumento.pdf" target="_blank">Protección de Datos</a>
+</div>
+
+<!-- Redes sociales con íconos personalizados -->
+<div class="footer-social">
+  <h4>Síguenos</h4>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+      alt="Facebook"
+      class="social-icon"
+  /></a>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+      alt="Instagram"
+      class="social-icon"
+  /></a>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+      alt="LinkedIn"
+      class="social-icon"
+  /></a>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+      alt="Twitter"
+      class="social-icon"
+  /></a>
+</div>
+</div>
+</footer>
+</section>
+  </body>
+</html>
