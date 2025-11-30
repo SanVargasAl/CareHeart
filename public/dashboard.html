@@ -60,27 +60,26 @@
         <div class="panel-derecho">
             
             <header class="encabezado">
-                    <button id="btn-menu-mobile" class="btn-menu-mobile">
-                        <span class="material-symbols-outlined">menu</span>
+                <button id="btn-menu-mobile" class="btn-menu-mobile">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="titulo-seccion">
+                    <h2>Dashboard</h2>
+                    <p>Resumen del estado de salud del paciente.</p>
+                </div>
+                <div class="perfil-usuario">
+                    <button class="btn-notificacion">
+                        <span class="material-symbols-outlined">notifications</span>
                     </button>
-
-                    <div class="titulo-seccion">
-                        <h2>Dashboard</h2>
-                    </div>
-
-                    <div class="perfil-usuario">
-                        <button class="btn-notificacion">
-                            <span class="material-symbols-outlined">notifications</span>
-                        </button>
-                        <div class="info-doctor">
-                            <img src="assets/images/doctor.jpg" alt="Doctor" class="avatar">
+                    <div class="info-doctor" onclick="window.location.href='perfil-doctor.html'" style="cursor: pointer;">
+                        <img src="assets/images/doctor.jpg" alt="Doctor" class="avatar">
+                        <div>
+                            <p class="nombre-doc">Dr. Martínez</p>
+                            <p class="rol-doc">Cardiólogo</p>
                         </div>
                     </div>
-
-                    <button class="btn-settings-ios" onclick="window.location.href='configuracion.html'">
-                        <span class="material-symbols-outlined">settings</span>
-                    </button>
-                </header>
+                </div>
+            </header>
 
             <main class="contenido-scroll">
                 
@@ -191,7 +190,6 @@
             </main>
         </div>
     </div>
-    
 <script src="assets/scripts/menu-responsive.js"></script>
 <script src="assets/scripts/notificaciones.js"></script>
 </body>
