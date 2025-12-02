@@ -403,3 +403,76 @@ body {
 .faq-item:hover .faq-answer {
   display: block; /* Efecto hover simple para mostrar respuesta */
 }
+/* =========================================
+   SECCIÓN DE VIDEOS
+   ========================================= */
+.seccion-videos {
+  padding: 60px 20px;
+  background-color: #f9fafb; /* Un gris muy suave para diferenciar la sección */
+  text-align: center;
+}
+
+.videos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videos-container h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.videos-container p {
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* Grilla Responsiva */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Se adapta solo */
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Tarjetas de Video */
+.video-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px); /* Efecto flotante al pasar el mouse */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.video-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #17a19c; /* Tu color principal (Teal) */
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Contenedor Mágico para Videos (Mantiene Aspect Ratio 16:9) */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #000; /* Fondo negro mientras carga */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
