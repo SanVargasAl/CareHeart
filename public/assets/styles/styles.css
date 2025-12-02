@@ -338,8 +338,8 @@ body {
    ESTILOS PARA PÁGINAS INTERNAS
    ========================================= */
 .header-interno {
-  background-color: #2e8b89; /* Color corporativo */
-  padding: 120px 5% 60px 5%; /* Espacio para el menú fijo */
+  background-color: #2e8b89; 
+  padding: 120px 5% 60px 5%; 
   text-align: center;
   color: white;
 }
@@ -380,7 +380,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Estilo para Acordeón (Preguntas Frecuentes) */
+
 .faq-item {
   margin-bottom: 15px;
   border: 1px solid #ddd;
@@ -398,75 +398,89 @@ body {
   padding: 20px;
   background: white;
   border-top: 1px solid #ddd;
-  display: none; /* Oculto por defecto (se puede activar con JS simple o CSS :hover) */
+  display: none; 
 }
 .faq-item:hover .faq-answer {
-  display: block; /* Efecto hover simple para mostrar respuesta */
+  display: block; 
 }
 /* =========================================
-   SECCIÓN DE VIDEOS
+   SECCIÓN DE VIDEOS (DISEÑO MEJORADO)
    ========================================= */
 .seccion-videos {
-  padding: 60px 20px;
-  background-color: #f9fafb; /* Un gris muy suave para diferenciar la sección */
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%);
   text-align: center;
+  border-top: 1px solid #e0f2f1;
 }
 
 .videos-container {
-  max-width: 1200px;
+  max-width: 1000px; 
   margin: 0 auto;
 }
 
 .videos-container h2 {
   font-size: 2.5rem;
   color: #111827;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
 }
 
 .videos-container p {
   color: #6b7280;
   font-size: 1.1rem;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
-/* Grilla Responsiva */
+/* Grilla Centrada */
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Se adapta solo */
-  gap: 30px;
-  justify-content: center;
+  display: flex; /* Usamos Flex para centrar mejor si son pocos videos */
+  flex-wrap: wrap;
+  justify-content: center; /* Esto asegura que queden al medio */
+  gap: 40px;
 }
 
-/* Tarjetas de Video */
+/* Tarjetas de Video Estilizadas */
 .video-card {
   background: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  padding: 15px;
+  border-radius: 20px;
+  /* Sombra más elegante y suave */
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 450px; /* Ancho máximo por tarjeta */
+  border: 1px solid rgba(23, 161, 156, 0.1); /* Borde sutil del color de tu marca */
 }
 
 .video-card:hover {
-  transform: translateY(-5px); /* Efecto flotante al pasar el mouse */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px); /* Sube más al pasar el mouse */
+  box-shadow: 0 20px 40px -5px rgba(23, 161, 156, 0.15); /* Sombra con tinte verde */
 }
 
 .video-card h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  color: #17a19c; /* Tu color principal (Teal) */
-  font-size: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #17a19c; /* Tu color Teal */
+  font-size: 1.3rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Contenedor Mágico para Videos (Mantiene Aspect Ratio 16:9) */
+/* Contenedor del Iframe (Aspect Ratio 16:9) */
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
   border-radius: 12px;
-  background-color: #000; /* Fondo negro mientras carga */
+  background-color: #000;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
 }
 
 .video-wrapper iframe {
