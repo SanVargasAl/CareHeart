@@ -39,8 +39,16 @@
             <a href="../index.html#comofunciona">Cómo funciona ▾</a>
             <ul class="Menu-vertical">
               <li><a href="public/registrarse.html">Regístrate</a></li>
-              <li><a href="../index.html#comofunciona">Vincula tu pulsera</a></li>
-              <li><a href="../index.html#comofunciona">Recibe alertas</a></li>
+              <li>
+                  <a href="#" onclick="alert('Para vincular un dispositivo, necesitas crear una cuenta. Te redirigiremos al registro.'); window.location.href='public/registrarse.html'; return false;">
+                      Vincula tu pulsera
+                  </a>
+              </li>
+              <li>
+                  <a href="#" onclick="alert('Para recibir alertas, debes estar registrado. Vamos a crear tu cuenta.'); window.location.href='public/registrarse.html'; return false;">
+                      Recibe alertas
+                  </a>
+              </li>
               </ul>
           </li>
 
@@ -82,7 +90,7 @@
           </p>
           <div class="botones-inicio">
             <a href="#comofunciona" class="btn-comofunciona">Descubre cómo funciona</a>
-            <a href="public/planes.html" class="btn-planes">Ver Planes de Suscripción</a>
+            <a href="#planes" class="btn-planes">Ver Planes de Suscripción</a>
           </div>
         </div>
         <div class="cont-ini-imagen">
@@ -106,7 +114,7 @@
       </div>
     </section>
 
-    <section class="seccion-planes">
+    <section class="seccion-planes" id="planes">
       <div class="cont-gral-planes">
         <div class="planes-texto">
           <h2>Nuestros Planes</h2>
@@ -168,7 +176,7 @@
     <section class="seccion-pie">
       <footer class="footer-container">
         <a href="" class="logo">
-          <img height="80" width="80" src="assets/images/logo careheart.png" alt="Logo Footer" />
+          <img height="80" width="80" src="public/assets/images/logo careheart.png" alt="Logo Footer" />
         </a>
         <div class="footer-links">
           <h4>Legal</h4>
@@ -218,6 +226,40 @@
         });
       });
     </script>
+<script>
+      const contactForm = document.querySelector('.form-contacto');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault(); // Evita que la página se recargue
+          
+          const btn = contactForm.querySelector('.btn-submit');
+          const textoOriginal = btn.innerText;
 
+          // 1. Estado de carga
+          btn.innerText = 'Enviando...';
+          btn.style.opacity = '0.7';
+          btn.disabled = true;
+
+          // 2. Simulación de envío (espera 1.5 segundos)
+          setTimeout(() => {
+            // 3. Estado de éxito
+            btn.innerText = '¡Mensaje Enviado!';
+            btn.style.backgroundColor = '#16a34a'; // Verde éxito
+            btn.style.opacity = '1';
+            
+            // Limpiar el formulario
+            contactForm.reset();
+
+            // 4. Volver al estado original después de 3 segundos
+            setTimeout(() => {
+              btn.innerText = textoOriginal;
+              btn.style.backgroundColor = ''; // Vuelve al color original del CSS
+              btn.disabled = false;
+            }, 3000);
+          }, 1500);
+        });
+      }
+    </script>
   </body>
 </html>
